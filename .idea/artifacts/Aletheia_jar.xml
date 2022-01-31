@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Aletheia:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Aletheia_jar</output-path>
+    <root id="archive" name="Aletheia.jar">
+      <element id="module-output" name="Aletheia" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/ressources/json-20210307.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/ressources/JDA-4.4.0_350-withDependencies.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/ressources/slf4j-api-1.7.32.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
