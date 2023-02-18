@@ -1,0 +1,9 @@
+{
+
+  "messageReglement": "Voici le reglement de notre serveur",
+  "titleWelcome": "Bienvenue !",
+  "messageWelcome": "Veuillez acceuillir %user% sur le discord ! \nFaites !info pour plus d'informations et !help pour voir la liste des commandes",
+
+  "serverInfos": "Rushcubeland est un serveur Minecraft mini-jeux, disponible à partir de la version 1.15 du jeu.\nLe thème de ce serveur se base sur la Grèce Antique et sa mythologie.",
+  "serverConnexionInfos": "Pour vous connecter au serveur, vous devez avoir la version 1.15 du jeu. Vous pouvez vous connecter au serveur via le serveur de jeu : play.rushcubeland.fr.\nNous vous conseillons de jouer avec des amis pour une bénéficier d'une experience optimale !"
+}

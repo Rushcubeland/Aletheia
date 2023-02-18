@@ -1,0 +1,9 @@
+{
+  "token": "",
+  "shardTotal": 1,
+  "restartScript": "start.sh",
+
+  "channelJoinID": "id",
+  "channelCommandsID": "id",
+  "channelReglementID": "id"
+}

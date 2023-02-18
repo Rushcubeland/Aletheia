@@ -1,0 +1,57 @@
+plugins {
+    id 'java'
+}
+
+group 'fr.rushcubeland.aletheia'
+version '1.0-SNAPSHOT'
+
+repositories {
+    maven {
+        url 'https://jitpack.io'
+    }
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    implementation 'net.dv8tion:JDA:5.0.0-beta.3'
+    implementation 'org.json:json:20220320'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    from sourceSets.main.output
+    dependsOn configurations.runtimeClasspath
+
+    from {
+        configurations.runtimeClasspath.findAll {
+            it.name.endsWith('jar')
+        }.collect {
+            zipTree(it)
+        }
+    }
+
+    into 'ressources', {
+        from 'ressources'
+    }
+
+    manifest {
+        attributes "Main-Class": "fr.rushcubeland.aletheia.Aletheia"
+    }
+
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
